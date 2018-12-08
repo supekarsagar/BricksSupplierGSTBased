@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>WinFormAnimation</id>
+    <version>1.5.6298.3372</version>
+    <title>Key-Frame Based Animation Library (.Net 3.5+)</title>
+    <authors>Soroush Falahati</authors>
+    <owners>Soroush Falahati</owners>
+    <licenseUrl>https://github.com/falahati/WinFormAnimation/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://falahati.github.io/WinFormAnimation/</projectUrl>
+    <iconUrl>https://github.com/falahati/WinFormAnimation/blob/master/WinFormAnimation/Icon.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple library for animating controls/values in .Net using key-frames (.Net 3.5 and later).</description>
+    <language>en-US</language>
+  </metadata>
+</package>

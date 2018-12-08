@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F64E5CC4-ECC3-4BA5-8E7D-84726F293512}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MD_Brief_Supplier</RootNamespace>
+    <AssemblyName>MD Bricks Supplier</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\MCS\SEM - II\CS - 204 Project\MD Bricks Supplier\MD Brief Supplier\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Square.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>159FEB498D6E8E981B5A81368E5F22310C53969D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MD Bricks Supplier_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar">
+      <HintPath>C:\Users\SAI\Videos\Projects\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 11.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PerfCopy">
+      <HintPath>C:\Users\SAI\Videos\Projects\packages\PerfCopy.1.2.2\lib\portable-net4+netcore45+wpa81+MonoAndroid1+MonoTouch1\PerfCopy.dll</HintPath>
+    </Reference>
+    <Reference Include="RingByteBuffer">
+      <HintPath>C:\Users\SAI\Videos\Projects\packages\RingBuffer.1.5.1\lib\portable-net4+netcore45+wpa81+MonoAndroid1+MonoTouch1\RingByteBuffer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation">
+      <HintPath>C:\Users\SAI\Videos\Projects\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionString.cs" />
+    <Compile Include="CrystalReportLabor.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLabor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportNewBill.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportNewBill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportRawMaterial.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportRawMaterial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutUs.Designer.cs">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportLabor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportLabor.Designer.cs">
+      <DependentUpon>frmReportLabor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportNewBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportNewBill.Designer.cs">
+      <DependentUpon>frmReportNewBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportRawMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportRawMaterial.Designer.cs">
+      <DependentUpon>frmReportRawMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoaster.Designer.cs">
+      <DependentUpon>frmRoaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseDate.Designer.cs">
+      <DependentUpon>frmChooseDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepositAmount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepositAmount.Designer.cs">
+      <DependentUpon>frmDepositAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpenseEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpenseEntry.Designer.cs">
+      <DependentUpon>frmExpenseEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgotPassword.Designer.cs">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIncomeEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIncomeEntry.Designer.cs">
+      <DependentUpon>frmIncomeEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLaborWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLaborWork.Designer.cs">
+      <DependentUpon>frmLaborWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDI.Designer.cs">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewCustomer.Designer.cs">
+      <DependentUpon>frmNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewLabor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewLabor.Designer.cs">
+      <DependentUpon>frmNewLabor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewServiceProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewServiceProvider.Designer.cs">
+      <DependentUpon>frmNewServiceProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewSupplier.Designer.cs">
+      <DependentUpon>frmNewSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseBangi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseBangi.Designer.cs">
+      <DependentUpon>frmPurchaseBangi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseCoal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseCoal.Designer.cs">
+      <DependentUpon>frmPurchaseCoal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseCoalDust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseCoalDust.Designer.cs">
+      <DependentUpon>frmPurchaseCoalDust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseNasikDust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseNasikDust.Designer.cs">
+      <DependentUpon>frmPurchaseNasikDust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseSawdust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseSawdust.Designer.cs">
+      <DependentUpon>frmPurchaseSawdust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseService.Designer.cs">
+      <DependentUpon>frmPurchaseService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseSoil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseSoil.Designer.cs">
+      <DependentUpon>frmPurchaseSoil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecordCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecordCustomer.Designer.cs">
+      <DependentUpon>frmRecordCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSale.Designer.cs">
+      <DependentUpon>frmSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewService.Designer.cs">
+      <DependentUpon>frmNewService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="CrystalReportLabor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLabor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportNewBill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportNewBill.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportRawMaterial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportRawMaterial.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutUs.resx">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportLabor.resx">
+      <DependentUpon>frmReportLabor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportNewBill.resx">
+      <DependentUpon>frmReportNewBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportRawMaterial.resx">
+      <DependentUpon>frmReportRawMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoaster.resx">
+      <DependentUpon>frmRoaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChooseDate.resx">
+      <DependentUpon>frmChooseDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepositAmount.resx">
+      <DependentUpon>frmDepositAmount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpenseEntry.resx">
+      <DependentUpon>frmExpenseEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForgotPassword.resx">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIncomeEntry.resx">
+      <DependentUpon>frmIncomeEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLaborWork.resx">
+      <DependentUpon>frmLaborWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDI.resx">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewCustomer.resx">
+      <DependentUpon>frmNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewLabor.resx">
+      <DependentUpon>frmNewLabor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewServiceProvider.resx">
+      <DependentUpon>frmNewServiceProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewSupplier.resx">
+      <DependentUpon>frmNewSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseBangi.resx">
+      <DependentUpon>frmPurchaseBangi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseCoal.resx">
+      <DependentUpon>frmPurchaseCoal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseCoalDust.resx">
+      <DependentUpon>frmPurchaseCoalDust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseNasikDust.resx">
+      <DependentUpon>frmPurchaseNasikDust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseSawdust.resx">
+      <DependentUpon>frmPurchaseSawdust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseService.resx">
+      <DependentUpon>frmPurchaseService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseSoil.resx">
+      <DependentUpon>frmPurchaseSoil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecordCustomer.resx">
+      <DependentUpon>frmRecordCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSale.resx">
+      <DependentUpon>frmSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewService.resx">
+      <DependentUpon>frmNewService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MD Bricks Supplier_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background w.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 user.png" />
+    <None Include="Resources\1 wordpad.png" />
+    <None Include="Resources\2 calc.png" />
+    <None Include="Resources\Square1.png" />
+    <None Include="Resources\4 logout.png" />
+    <None Include="Resources\load flash screen.jpg" />
+    <None Include="Resources\New HD1.jpg" />
+    <None Include="Resources\logo 3D.jpg" />
+    <None Include="Resources\logo 3D.png" />
+    <Content Include="dBMaheshBricksSupplier.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dBMaheshBricksSupplier_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>dBMaheshBricksSupplier.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\download.png" />
+    <None Include="Resources\bright-red-brick-wall-texture.jpg" />
+    <None Include="Resources\worker.jpg" />
+    <None Include="Resources\new bill.png" />
+    <None Include="Resources\Deposite amount.jpg" />
+    <None Include="Resources\Sales.jpg" />
+    <None Include="Resources\income.png" />
+    <Content Include="Square.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
